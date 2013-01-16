@@ -1,5 +1,5 @@
 Ext.application({
-    name: 'F:\Projects\Sencha',
+    name: 'WeatherApp-Demo',
 
     requires: [
         'Ext.MessageBox'
@@ -30,7 +30,7 @@ Ext.application({
         Ext.fly('appLoadingIndicator').destroy();
 
         // Initialize the main view
-        Ext.Viewport.add(Ext.create('F:\Projects\Sencha.view.Main'));
+        Ext.Viewport.add(Ext.create('WeatherApp-Demo.view.Main'));
     },
 
     onUpdated: function() {
