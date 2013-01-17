@@ -3,7 +3,8 @@ Ext.define('WeatherApp-Demo.view.Main', {
     xtype: 'main',
     requires: [
         'Ext.TitleBar',
-        'Ext.Video'
+        'Ext.Video',
+        'WeatherApp-Demo.view.Forecast'
     ],
     config: {
         tabBarPosition: 'bottom',

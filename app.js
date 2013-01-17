@@ -6,6 +6,8 @@ Ext.application({
     ],
 
     views: ['Main'],
+    stores: ['Forecast'],
+    controllers : ['Forecast'],
 
     icon: {
         '57': 'resources/icons/Icon.png',
@@ -28,6 +30,9 @@ Ext.application({
     launch: function() {
         // Destroy the #appLoadingIndicator element
         Ext.fly('appLoadingIndicator').destroy();
+        var store = Ext.getStore('Forecast');
+        store.load();
+        console.log(store);
 
         // Initialize the main view
         Ext.Viewport.add(Ext.create('WeatherApp-Demo.view.Main'));
