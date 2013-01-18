@@ -12,7 +12,7 @@ Ext.define('WeatherApp-Demo.store.Forecast', {
 			url : 'http://dynagility.accu-weather.com/widget/dynagility/weather-data.asp?location=saigon&metric=1',
 			reader: {
 	            type: 'xml',
-	            rootProperty : 'forecast',
+	            rootProperty : 'adc_database.forecast',
 	            record: 'day'      
 	        }
 		},

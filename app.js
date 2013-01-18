@@ -2,12 +2,14 @@ Ext.application({
     name: 'WeatherApp-Demo',
 
     requires: [
-        'Ext.MessageBox'
+        'Ext.MessageBox',
+        'WeatherApp-Demo.store.Current',
+        'WeatherApp-Demo.view.Current'
     ],
 
-    views: ['Main'],
-    stores: ['Forecast'],
-    controllers : ['Forecast'],
+    views: ['Main','Current'],
+    stores: ['Current'],
+    controllers : [],
 
     icon: {
         '57': 'resources/icons/Icon.png',
@@ -28,11 +30,10 @@ Ext.application({
     },
 
     launch: function() {
+    	Ext.Viewport.setWidth(320);
+        Ext.Viewport.setHeight(460);
         // Destroy the #appLoadingIndicator element
         Ext.fly('appLoadingIndicator').destroy();
-        var store = Ext.getStore('Forecast');
-        store.load();
-        console.log(store);
 
         // Initialize the main view
         Ext.Viewport.add(Ext.create('WeatherApp-Demo.view.Main'));
