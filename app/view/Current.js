@@ -1,5 +1,6 @@
 Ext.define('WeatherApp-Demo.view.Current', {
 	extend : 'Ext.Container',
+	controller : 'WeatherApp-Demo.controller.Current',
 	xtype : 'currentView',
 	requires : [
 	            'Ext.Label',
