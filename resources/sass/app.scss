@@ -17,3 +17,87 @@
 @include sencha-msgbox;
 
 // Your custom code goes here...
+html, body {
+	background : white;
+}
+
+#ext-currentView-1 {
+	background :#1985D0
+}
+
+.lbCity {
+	font-family: fantasy;
+	text-align: center;
+	font-size: x-large;
+	padding-top: 10px;
+	color: white;
+}
+
+.lbWeatherTxt {
+	font-family: cursive;
+	text-align: center;
+	font-size: x-large;
+	color: white;
+}
+
+.lbTemperature {
+	font-family: fantasy;
+	text-align: center;
+	font-size: 6em;
+	padding-top: 10px;
+	color: white;
+}
+
+.lbRealfeel {
+	font-family: cursive;
+	text-align: center;
+	font-size: 0.9em;
+	padding-left: 15px;
+	color: white;
+}
+
+.lbRealfeelTemp {
+	font-family: cursive;
+	text-align: center;
+	font-size: 0.9em;
+	color: white;
+}
+
+.lbWind {
+	font-family: cursive;
+	text-align: center;
+	font-size: 0.9em;
+    padding-left: 5px;
+	color: white;
+}
+
+.lbHumidity {
+	font-family: cursive;
+	text-align: center;
+	font-size: 0.9em;
+	padding-left: 5px;
+	color: white;
+}
+
+.imgWind {
+	width: 30px;
+	margin-left: 30px;
+}
+
+.imgHumidity {
+	width: 15px;
+	margin-left: 30px;
+}
+
+.imgWeather { 
+	width: 100%;
+	height: 75px;
+	margin-top: 30px;
+	margin-bottom: -20px;
+	background-position-x: center;
+	background-position-y: center;
+}
+
+.divBasicInfo {
+	margin-top: 20px;
+}

@@ -16,7 +16,6 @@ Ext.define('WeatherApp-Demo.store.Forecast', {
 	            record: 'day'      
 	        }
 		},
-		
 	}
 	
 });

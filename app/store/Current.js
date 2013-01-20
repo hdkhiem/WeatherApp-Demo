@@ -8,7 +8,7 @@ Ext.define('WeatherApp-Demo.store.Current', {
 		model : 'WeatherApp-Demo.model.Current',
 		proxy : {
 			type : 'ajax',
-			url : 'http://dynagility.accu-weather.com/widget/dynagility/weather-data.asp?location=saigon&metric=1',
+			url : 'http://dynagility.accu-weather.com/widget/dynagility/weather-data.asp?location=saigon&metric=0',
 			reader: {
 				type: 'xml', 
 				rootProperty : 'adc_database',
